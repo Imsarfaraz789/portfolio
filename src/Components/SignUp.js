@@ -7,7 +7,7 @@ const SignUp = ({ toggleForm }) => {
 
     const handleSignUp = async () => {
         try {
-            await axios.post("http://localhost:8000/register", {
+            await axios.post("https://p-backend-oti0.onrender.com/register", {
                 email,
                 password
             })

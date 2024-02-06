@@ -12,7 +12,7 @@ const Project = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('https://192.168.1.106:8000/projects');
+        const response = await axios.get('https://p-backend-oti0.onrender.com/projects');
         setProjects(response.data);
         console.log(response.data)
       } catch (error) {

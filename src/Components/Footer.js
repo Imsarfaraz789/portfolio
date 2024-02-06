@@ -14,7 +14,7 @@ const Footer = () => {
   const handleFomr = async (e) => {
     try {
       e.preventDefault();
-      const response = await axios.post("https://192.168.1.106:8000/sendgmail", {
+      const response = await axios.post("https://p-backend-oti0.onrender.com/sendgmail", {
         email,
         subject,
         message
