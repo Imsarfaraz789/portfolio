@@ -10,7 +10,7 @@ const SingleProject = () => {
     useEffect(() => {
         const fetchProjectDetails = async () => {
             try {
-                const response = await axios.get(`http://192.168.1.106:8000/projects/${id}`);
+                const response = await axios.get(`https://192.168.1.106:8000/projects/${id}`);
                 setProject(response.data);
 
             } catch (error) {
