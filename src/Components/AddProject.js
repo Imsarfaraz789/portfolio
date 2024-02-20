@@ -27,7 +27,7 @@ const AddProject = () => {
             formData.append('value', sanitizedValue);
 
 
-            await axios.post("https://p-backend-oti0.onrender.com//newpost", formData, {
+            await axios.post("https://p-backend-oti0.onrender.com/newpost", formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },
